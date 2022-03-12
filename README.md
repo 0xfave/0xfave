@@ -7,7 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/0xfavouradetona" target="blank"><img src="https://img.shields.io/twitter/follow/0xfavouradetona?logo=twitter&style=for-the-badge" alt="0xfavouradetona" /></a> </p>
 
-- 🔭 I’m currently working on [Krypt A web 3.0 app [Dapp]](https://github.com/fave28/krypt)
+- 🔭 I’m currently working on [Krypt A web 3.0 app [Dapp]](https://github.com/0xfavouradetona/krypt)
 
 - 🌱 I’m currently learning **React.js, Next.js, Solidity, Blockchain Technology**
 
