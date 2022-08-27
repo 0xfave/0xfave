@@ -54,6 +54,14 @@
       <a href="https://github.com/0xfavouradetona/fitness-web-pp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=fitness-web-pp" /></a>
     </td>
   </tr>
+  <tr>
+    <td valign="center">
+      <a href="https://github.com/0xfavouradetona/solidity-todo-app"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=solidity-todo-app" /></a>
+    </td>
+    <td>
+      <a href="https://github.com/0xfavouradetona/fitness-web-pp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=fitness-web-pp" /></a>
+    </td>
+  </tr>
 </table>
 
 
