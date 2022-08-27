@@ -9,14 +9,16 @@
 
 ## 🔭 Here is the list of my Projects
 <table>
-
   <tr>
     <td>
       <a href="https://github.com/0xfavouradetona/nft-landing-page-minting"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=nft-landing-page-minting" /></a>
     </td>
   </tr>
-  
-  
+    <tr>
+    <td>
+      <a href="https://github.com/0xfavouradetona/fitness-web-pp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=fitness-web-pp" /></a>
+    </td>
+  </tr>
 </table>
 
 - 📝 I regularly write articles on [https://thefavouradetona.hashnode.dev/](https://thefavouradetona.hashnode.dev/)
