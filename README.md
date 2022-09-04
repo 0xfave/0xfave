@@ -29,6 +29,20 @@
         <br/>
         <a href="">
         <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt="My Portfolio"/></a>
+        <h3>My Projects</h3>
+        <a href="https://nft-landing-page-minting.vercel.app/" target="blank">NFT MInting Landing Page</a>
+        <br />
+        <a href="https://fitness-web-pp.vercel.app/" target="blank">Fitness Web App using Rapid API</a>
+        <br />
+        <a href="https://solidity-todo-app.vercel.app/" target="blank">Solidity TODO App</a>
+        <br />
+        <a href="https://project-hoobank-fawn.vercel.app/" target="blank">Hoobank Landing Page</a>
+        <br />
+        <a href="https://fave-dao.vercel.app/" target="blank">Fave DAO</a>
+        <br />
+        <a href="https://project-youtube-eight.vercel.app/" target="blank">YouTube Clone</a>
+        <br />
+        <a href="https://syncfusion-dashboard-rose.vercel.app/" target="blank">SYNFUSION Dashboard</a>
       </p>
     </td>
     <td>
