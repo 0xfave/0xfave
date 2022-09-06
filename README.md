@@ -43,6 +43,8 @@
         <a href="https://project-youtube-eight.vercel.app/" target="blank">YouTube Clone</a>
         <br />
         <a href="https://syncfusion-dashboard-rose.vercel.app/" target="blank">SYNFUSION Dashboard</a>
+        <br />
+        <a href="https://nft-marketplace-0.vercel.app/" target="blank">NFT Marketplace</a>
       </p>
     </td>
     <td>
