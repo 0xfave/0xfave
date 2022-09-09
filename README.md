@@ -77,6 +77,9 @@
     <td>
       <a href="https://github.com/0xfavouradetona/fitness-web-pp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=fitness-web-pp" /></a>
     </td>
+    <td>
+      <a href="https://github.com/0xfavouradetona/token-staking"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=token-staking" /></a>
+    </td>
   </tr>
 </table>
 
