@@ -22,10 +22,10 @@
         <br />
         <br />
         <h3>Connect With Me</h3>
-        <a href="https://twitter.com/0xfavouradetona" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="0xfavouradetona" height="30" width="40" /></a>
+        <a href="https://twitter.com/0xfave" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="0xfavouradetona" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/favouradetona" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="favouradetona" height="30" width="40" /></a>
 <a href="https://instagram.com/thefavouradetona" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="thefavouradetona" height="30" width="40" /></a>
-<a href="https://hashnode.com/@0xfavouradetona" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" alt="@0xfavouradetona" height="30" width="40" /></a>
+<a href="https://hashnode.com/@0xfave" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" alt="@0xfavouradetona" height="30" width="40" /></a>
         <br/>
         <a href="">
         <img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt="My Portfolio"/></a>
@@ -58,29 +58,29 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=0xfavouradetona" alt="0xfavouradetona" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/0xfavouradetona" target="blank"><img src="https://img.shields.io/twitter/follow/0xfavouradetona?logo=twitter&style=for-the-badge" alt="0xfavouradetona" /></a> </p>
+<p align="left"> <a href="https://twitter.com/0xfave" target="blank"><img src="https://img.shields.io/twitter/follow/0xfavouradetona?logo=twitter&style=for-the-badge" alt="0xfavouradetona" /></a> </p>
 
 ## 🔭 Here is the list of my Projects
 <table>
   <tr>
     <td valign="center">
-      <a href="https://github.com/0xfavouradetona/nft-landing-page-minting"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=nft-landing-page-minting" /></a>
+      <a href="https://github.com/0xfave/nft-landing-page-minting"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=nft-landing-page-minting" /></a>
     </td>
     <td>
-      <a href="https://github.com/0xfavouradetona/fitness-web-pp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=fitness-web-pp" /></a>
+      <a href="https://github.com/0xfave/fitness-web-pp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=fitness-web-pp" /></a>
     </td>
   </tr>
   <tr>
     <td valign="center">
-      <a href="https://github.com/0xfavouradetona/solidity-todo-app"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=solidity-todo-app" /></a>
+      <a href="https://github.com/0xfave/solidity-todo-app"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=solidity-todo-app" /></a>
     </td>
     <td>
-      <a href="https://github.com/0xfavouradetona/fitness-web-pp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=fitness-web-pp" /></a>
+      <a href="https://github.com/0xfave/fitness-web-pp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=fitness-web-pp" /></a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/0xfavouradetona/token-staking"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=token-staking" /></a>
+      <a href="https://github.com/0xfave/token-staking"><img src="https://github-readme-stats.vercel.app/api/pin/?username=0xfavouradetona&repo=token-staking" /></a>
     </td>
   </tr>
 </table>
