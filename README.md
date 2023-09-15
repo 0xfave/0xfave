@@ -18,7 +18,7 @@ Blockchain developer specialise in Blockhain security
 
 ### Research
 
-- [Multichain Auditor](https://github.com/0xJuancito/multichain-auditor) - Observations and tips for auditing protocols on multiple chains.
+- [Solidity Audit Notes](https://github.com/0xfave/solidity-audit-notes) - Observations and tips while studying protocols.
 
 ### Solidity CTF Solutions & Writeups
 
