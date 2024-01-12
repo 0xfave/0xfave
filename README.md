@@ -1,11 +1,11 @@
 Gm!👋 I'm Fave!
 =======================
 
-Blockchain developer specialise in Blockhain security
+Smart Contract developer specialise in Blockchain security
 -----------------------------------------------------
 
-*   🔐 Smart Contract Auditor | Solidity
-*   👨‍🔬 Blockchain Engineer
+*   🔐 Smart Contract Auditor | Solidity | Rust
+*   👨‍🔬 Building smart contracts that are simple, secure, and battle-tested, with clear documentation.
 *   📫 You can reach me for consulting and audits on Twitter [@0xFave](https://twitter.com/0xFave)
 *   🤝  I'm open to collaborating on Smart contract development and Audits
 *   ⚡  I love Anime, Football ⚽, and First Person Shooter 🔫 Games
