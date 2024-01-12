@@ -29,7 +29,7 @@ Smart Contract developer specialise in Blockchain security
 
 2 years building web3 projects.
 
-Preferred Stack: Solidity, JavaScript, React + Next.js
+Preferred Stack: Solidity, Rust, Anchor
 
 ### web3 Projects
 
