@@ -36,7 +36,7 @@ Smart Contract developer specialise in Blockchain security
 | ------- | -------- | ----------- | ----------- |
 | 05.2023 | 1M, 1L   | [Ecet](./solo/ecet.md) | BSC |
 | 06.2024 | 1M, 2l   | [Numerical](./solo/numerical.md) | Base |
-| 01.2025 | 3C, 1l   | Private  | Solana |
+| 01.2025 | 3C, 1l   | [Bruv](https://github.com/Frankcastleauditor/public-audits/blob/main/reports/Bruv_Audit_Final.pdf?s=09)  | Solana |
 
 ## Dev
 3 years building web3 projects.
