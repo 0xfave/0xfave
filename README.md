@@ -1,45 +1,118 @@
 # 👋 Gm! I'm Fave
 
-**Solana / Web3 Data Engineer building real-time on-chain intelligence systems with Rust**
+I build backend systems for AI inference and high-throughput data infrastructure.
 
-I build high-performance data infrastructure for blockchain applications—real-time indexers, ETL pipelines, monitoring systems, and analytics backends that turn raw on-chain activity into structured, usable signal.
+Rust-first. I care about systems that stay fast and predictable under load.
 
-## ⚙️ What I Focus On
+---
 
-- Real-time Solana and EVM data pipelines
-- Custom blockchain indexers
-- ClickHouse / PostgreSQL analytics infrastructure
-- Transaction monitoring and event classification
-- Alerting and intelligence systems for on-chain activity
+## Currently building: inference-engine-ops
 
-## 🚀 What I’m Building
+A Rust-native LLM inference server, built from the ground up.
 
-My current focus is building systems that help protocols and data-heavy crypto products:
+**Problem:** most inference servers hide the tradeoffs that actually
+determine cost and latency — batching strategy, cache eviction, prefill
+vs decode. I wanted to understand and control those directly.
 
-- process on-chain activity in real time
-- detect important wallet, trading, and liquidity events
-- query large datasets efficiently
-- power internal analytics and monitoring workflows
+**Shipped so far:**
+- Axum HTTP server with an OpenAI-compatible API
+- Continuous batching scheduler
+- KV cache with paging
+- Semantic caching layer
+- Prometheus observability
 
-## 🧩 Selected Work
+**Results (benchmarked, M0 → M3):**
+- KV cache: 1.17 → 9.30 tok/s, a 7.9x speedup. Stopped reprocessing
+  full history on every generation step.
+- Batching (B=4): 10.80 tok/s total throughput across 4 concurrent
+  sequences, sharing one forward pass across requests.
+- Epoch queue: 5.66–10.39 tok/s sustained across up to max_batch
+  concurrent users, with automatic epoch scheduling.
+- Time to first token stayed under 0.5s through every stage, even as
+  throughput scaled up.
 
-- Built Rust-based pipelines processing high-volume blockchain data in real time
-- Developed Solana DEX tracking infrastructure using Rust and ClickHouse
-- Built monitoring systems for transaction classification and protocol activity
-- Improved database performance and migration workflows in production environments
-- Designed systems used in trading and blockchain automation environments
+[→ Repository](https://github.com/0xfave/inference-engine-ops).
 
-## 🔐 Background
+---
 
-I also have a smart contract security background, which gives me an edge when building blockchain data systems: I understand not just how to process on-chain activity, but how to recognize risky or unusual behavior inside it.
+## Selected work
 
-## 📚 Writing & Research
+### onchain-intelligence-engine
+Real-time Rust/ClickHouse pipeline tracking Pump.fun, PumpSwap, Moonshot,
+and Launchlabs DEX activity at sub-second latency.
 
-- [Raydium AMM: How It Works](https://0xfave.hashnode.dev/raydiumammhowitworks)
-- [Understanding Rounding Errors in DeFi](https://mirror.xyz/0xE33b7373B5c38b9FBc7fBC0D5d3F17C494A93b85/Oq1JecS_97R9I9S4OVhnRXCveS2BCIzBByuJCp_g_aw)
-- [Solidity Audit Notes & Patterns](https://github.com/0xfave/solidity-audit-notes)
+**Problem:** on-chain data is high-volume and noisy. Querying it fast
+enough for trading and analytics use cases needed a purpose-built pipeline,
+not a generic indexer.
 
-## 📫 Reach Me
+**Approach:** async ingestion via Geyser/gRPC, normalized storage in
+ClickHouse, dockerized for deployment.
 
-- [X / Twitter](https://twitter.com/0xFave)
-- [Email](mailto:fave8194@gmail.com)
+[→ Repository](https://github.com/0xfave/onchain-intelligence-engine) · [→ Write-up on Geyser/gRPC](https://0xfave.hashnode.dev/how-geyser-streams-data)
+
+### job-queue
+Rust job queue purpose-built for LLM inference workloads. PostgreSQL-backed,
+LISTEN/NOTIFY for dispatch, no Redis, no managed queue service.
+
+**Problem:** inference workloads need reliable job dispatch with retry
+and dead-letter handling, and I wanted this without adding infra dependencies.
+
+**Architecture:** three concurrent tokio tasks (HTTP API, scheduler,
+heartbeat monitor). Workers bound by `tokio::sync::Semaphore` for
+concurrency control. Full state machine: Pending → Running → Completed,
+with Failed jobs retrying until exhausted, then routed to a DLQ.
+
+**Decision:** Postgres LISTEN/NOTIFY over Redis or a managed queue.
+I built this to learn queue design from first principles — state
+machines, retry logic, worker dispatch — rather than patch services
+together with an off-the-shelf tool. Understanding the mechanics
+directly, not just wiring managed infra.
+
+[→ Repository](https://github.com/0xfave/job-queue)
+
+### JupLend data migration
+Rust-based migration tool moving operations data from PostgreSQL to
+ClickHouse, with parallel batch processing and automatic row-count
+verification.
+
+**Problem:** Postgres wasn't well-suited to the client's growing record
+volume and the query patterns they needed for fast retrieval at scale.
+
+**Decision:** recommended ClickHouse — MergeTree engine, monthly
+partitioning, ordering optimized for their actual query patterns
+(action type, time, user).
+
+**Approach:** built a range-based parallel migration tool rather than
+a one-off script, with dry-run mode and automatic verification to
+guarantee no data loss during the move.
+
+**Result:** significantly faster query performance at scale.
+
+[→ Repository](https://github.com/0xfave/jup-migrate/)
+
+### Token-2022 stablecoin (Superteam SSS bounty)
+Built a stablecoin with transfer hooks, blacklist, and permanent delegate
+on Solana's Token-2022 standard.
+
+[→ Repository](link)
+
+---
+
+## Background
+
+Security research: 20+ validated vulnerabilities found across Code4rena,
+Sherlock, Cantina, and Immunefi audits. This gives me an edge in backend
+work — I think about failure modes and abuse cases by default, not as
+an afterthought.
+
+---
+
+## Writing
+
+I write about what I build. [Engineering notes →](https://0xfave.hashnode.dev)
+
+---
+
+## Reach me
+
+[X/Twitter](https://twitter.com/0xfav3) · [Email](mailto:fave8194@gmail.com)
