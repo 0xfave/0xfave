@@ -31,6 +31,11 @@ vs decode. I wanted to understand and control those directly.
 - Time to first token stayed under 0.5s through every stage, even as
   throughput scaled up.
 
+**Note:** per-sequence throughput drops as batch size increases —
+this is the aggregate-throughput-vs-per-user-latency tradeoff every
+inference server has to make. M2 optimizes for total throughput;
+tuning per-user experience is a different dial.
+
 [→ Repository](https://github.com/0xfave/inference-engine-ops).
 
 ---
